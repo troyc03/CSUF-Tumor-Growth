@@ -69,7 +69,6 @@ conda install numpy scipy pandas matplotlib
 
 ## Credits
 
-Credits
 Created by Troy Chin — CS major, math & data science minor at California State University, Fullerton. This project reflects interdisciplinary research interests in mathematical modeling, machine learning, and biological systems.
 
 ## GNU License
