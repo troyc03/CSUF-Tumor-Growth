@@ -6,12 +6,12 @@ import matplotlib.pyplot as plt
 class TumorGrowthModel:
 
     def __init__(self, r=0.2, K=1000, P0=10, T=100, dt=0.1):
-        self.r = r
-        self.K = K
-        self.P0 = P0
-        self.T = T
-        self.dt = dt
-        self.steps = int(T / dt)
+        self.r = r # Growth rate
+        self.K = K # Carrying capacity
+        self.P0 = P0 # Initial condition
+        self.T = T # Time
+        self.dt = dt # Change in time
+        self.steps = int(T / dt) # Time step
         self.results_continuous = None
         self.results_discrete = None
 
