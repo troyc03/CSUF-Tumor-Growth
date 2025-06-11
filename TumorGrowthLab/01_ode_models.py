@@ -69,7 +69,7 @@ class TumorGrowthModel:
         if self.results_discrete is not None:
             plt.figure(figsize=(10, 6))
             plt.plot(self.results_discrete['time'], self.results_discrete['logistic_discrete'],
-                     label='Logistic (Discrete)', linestyle='--', color='black')
+                     label='Logistic (Discrete)', color='black')
             plt.plot(self.results_discrete['time'], self.results_discrete['gompertz_discrete'],
                      label='Gompertz (Discrete)', linestyle='--', color='green')
             plt.xlabel('Time')
