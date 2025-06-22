@@ -60,6 +60,9 @@ class LinearRegressionModel:
         plt.show()
         
 def main():
+    """
+    Example linear regression model.
+    """
     # Generate growth data
     model = TumorGrowthModel(r=0.5, K=100, P0=10, T=10, dt=0.1)
     cont_data = model.simulate_continuous()
