@@ -93,15 +93,18 @@ class TumorGrowthModel:
             plt.tight_layout()
             plt.show()
 
+def main():
+        model = TumorGrowthModel(r=0.5, K=100, P0=10, T=10, dt=0.1)
+
+        df_cont = model.simulate_continuous()
+        df_disc = model.simulate_discrete()
+
+        print("Continuous Model Sample:\n", df_cont.head())
+        print("\nDiscrete Model Sample:\n", df_disc.head())
+
+        model.save_to_csv()
+        model.plot_results()
+
 # Usage
 if __name__ == '__main__':
-    model = TumorGrowthModel(r=0.5, K=100, P0=10, T=10, dt=0.1)
-
-    df_cont = model.simulate_continuous()
-    df_disc = model.simulate_discrete()
-
-    print("Continuous Model Sample:\n", df_cont.head())
-    print("\nDiscrete Model Sample:\n", df_disc.head())
-
-    model.save_to_csv()
-    model.plot_results()
+    main()
