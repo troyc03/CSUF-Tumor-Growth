@@ -99,7 +99,7 @@ def main():
         df_cont = model.simulate_continuous()
         df_disc = model.simulate_discrete()
 
-        print("Continuous Model Sample:\n", df_cont.head())
+        print("\nContinuous Model Sample:\n", df_cont.head())
         print("\nDiscrete Model Sample:\n", df_disc.head())
 
         model.save_to_csv()
